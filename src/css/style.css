@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+}
+
+#all-headers {
+	width: 100%;
+	height: 500px;
+	background-image: url(../imgs/background.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.section {
+	width: 100%;
+}
+
+#login-div {
+	height: 40px;
+	background-color: #00000050;
+}
+
+#navbar-div {
+	height: 80px;
+	background-color: #FFFFFF50;
+}
+
+#search-div {
+	height: 150px;
+	background-color: #00FF0050;
+	margin-top: 230px;
+}
+
+#why-us-div {
+	height: 300px;
+	background-color: #C27FF8;
+}
+
+#top-hotels-div {
+	height: 1000px;
+	background-color: #CADEDA;
+}
+
+#about-us-div {
+	height: 600px;
+	background-color: #15BFA1;
+}
+
+#testimonials-div {
+	height: 600px;
+	background-color: #ABCDEF;
+}
+
+#blogs-div {
+	height: 600px;
+	background-color: #123456;
+}
+
+#info-div {
+	height: 600px;
+	background-color: #3E0337;
+}
+
+#copyright-div {
+	height: 50px;
+	background-color: #000000;
+}
