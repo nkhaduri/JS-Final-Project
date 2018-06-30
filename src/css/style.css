@@ -30,29 +30,9 @@ body {
 	margin-top: 230px;
 }
 
-#why-us-div {
-	height: 300px;
-	background-color: #C27FF8;
-}
-
 #top-hotels-div {
 	height: 1000px;
 	background-color: #CADEDA;
-}
-
-#about-us-div {
-	height: 600px;
-	background-color: #15BFA1;
-}
-
-#testimonials-div {
-	height: 600px;
-	background-color: #ABCDEF;
-}
-
-#blogs-div {
-	height: 600px;
-	background-color: #123456;
 }
 
 #info-div {
