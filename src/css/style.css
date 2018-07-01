@@ -14,6 +14,61 @@ body {
 	width: 100%;
 }
 
+#search-div {
+	height: 150px;
+	width: 100%;
+	margin-top: 230px;
+	padding-left: 4em;
+	padding-right: 4em;
+	box-sizing: border-box; 
+	text-align:center;
+}
+
+#search-div-input-fields {
+	margin: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#search-div-input-fields input {
+	border-radius: 0.3125em;
+}
+
+#search-div-input-fields label {
+	color: #ffffff;
+}
+
+.search-div-input-elems {
+	height: 2em;
+	margin-left: 0.5em;
+	margin-right: 0.5em; 
+	padding-left: 0.938em;
+	padding-right: 0.938em;
+}
+
+#search-button {
+	background-color: #ffffff;
+    border: none;
+    color: #575151;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+input[type=date] {
+	text-transform: uppercase;
+	color: grey;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
 #login-div {
 	height: 40px;
 	background-color: #00000050;
@@ -32,7 +87,7 @@ body {
 
 #top-hotels-div {
 	height: 1000px;
-	background-color: #CADEDA;
+	background-color: #ffffff;
 }
 
 #info-div {
@@ -44,3 +99,4 @@ body {
 	height: 50px;
 	background-color: #000000;
 }
+

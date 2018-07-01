@@ -11,10 +11,17 @@
 	<div id="all-headers" class="section"> 
 		<div class="section" id="login-div"> </div>
 		<div class="section" id="navbar-div"> </div>
-		<div class="section" id="search-div"> </div>
-	</div>
-
-	<div id="top-hotels-div" class="section">
+		<div class="section" id="search-div">
+			<div id="search-div-input-fields">
+				<label> Location: </label>
+				<input type="text" class="search-div-input-elems" id="location" placeholder="City, Country">
+				<label> Check-In: </label>
+				<input type="date" class="search-div-input-elems" id="book-start">
+				<label> Check-Out: </label>
+				<input type="date" class="search-div-input-elems" id="book-end">
+				<button class="search-div-input-elems" type="button" id="search-button"> Search </button>
+			</div>
+		</div>
 	</div>
 
 	<div id="info-div" class="section">
@@ -24,5 +31,6 @@
 	</div>
 
 <script src="js/app.js"></script>
+
 </body>
 </html>
