@@ -130,6 +130,10 @@ body {
 	height: 40px;	
 }
 
+.submit-button-div {
+	text-align: center;
+}
+
 .submit-button{
   height: 35px;
   border: hidden;
@@ -137,8 +141,8 @@ body {
   color: #FFFFFFCC;
   font-size: 0.9em;
   margin-top: 4%;
-  margin-left: 35%;
-  width: 30%;
+  /*margin-left: 35%;*/
+  width: 100px;
   background-color: #1F4851AA;
   cursor: pointer;
   padding: 0;
@@ -269,7 +273,34 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 #copyright-div {
-	height: 50px;
+	height: 15px;
 	background-color: #000000;
+	color: #FFFFFFDD;
+	font-size: 0.85em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#copyright-left {
+	float: left;
+	margin-left: 3%;
+}
+
+#copyright-right {
+	float: right;
+	margin-right: 3%;
+}
+
+.copyright-a {
+	color: #FFFFFFDD;
+	text-decoration: none;
+}
+
+.copyright-a:hover {
+	text-decoration: underline;
+}
+
+.copyright-a:visited {
+	color: #FFFFFFDD;
 }
 
