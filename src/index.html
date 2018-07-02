@@ -9,7 +9,71 @@
 <body>
 
 	<div id="all-headers" class="section"> 
-		<div class="section" id="login-div"> </div>
+		<div class="modal" id="reg-modal-wrap">
+			<div id="register-modal"> 
+				<div class="close"> &times; </div>
+				<form>
+					<div id="register-form-div">
+						<label for="mail">E-mail</label>
+						<input type="email" name="email" id="mail" placeholder="Enter your e-mail" class="form-input" required>
+						
+						<label for="user">Username</label>
+						<input type="text" name="username" id="user" placeholder="Enter your username" class="form-input" required>
+						
+						<label for="pass">Password</label>
+						<input type="password" name="password" id="pass" placeholder="Enter your password" class="form-input" required>
+						
+						<label for="cpass">Confirm Password</label>
+						<input type="password" name="cpassword" id="cpass" placeholder="Confirm your password" class="form-input" required>
+
+						<div class="check-wrap">
+							<input type="checkbox" name="agree" class="check">
+							<span class="check-span">
+								I agree with 
+								<a href="pages/terms_and_conditions.html" target="_blank"> Terms & Conditions </a>
+							</span>
+						</div>
+
+						<input type="button" value="Submit" class="submit-button">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="modal" id="login-modal-wrap">
+			<div id="login-modal"> 
+				<div class="close"> &times; </div>
+				<form>
+					<div id="login-form-div">
+						
+						<label for="user">Username</label>
+						<input type="text" name="username" id="user" placeholder="Enter your username" class="form-input" required>
+						
+						<label for="pass">Password</label>
+						<input type="password" name="password" id="pass" placeholder="Enter your password" class="form-input" required>
+						
+						<a id="forgot-pass"> Forgot password? </a>
+						<span id="password-sent"> Your password has been sent to your e-mail </span>
+
+						<div class="check-wrap">
+							<input type="checkbox" name="remember" class="check">
+							<span class="check-span"> Remember me </span>
+						</div>
+
+						<input type="button" value="Login" class="submit-button">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="section" id="login-div"> 
+			<img src="imgs/logo5.png" id="logo-img">
+			<span id="logo-span"> HotelBnB </span>
+
+			<button class="login-button" id="register"> register </button>	
+			<button class="login-button" id="login"> login </button>
+		</div>
+
 		<div class="section" id="navbar-div"> </div>
 		<div class="section" id="search-div">
 			<div id="search-div-input-fields">
