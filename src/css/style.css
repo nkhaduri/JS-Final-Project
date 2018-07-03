@@ -375,12 +375,43 @@ input[type=date]::-webkit-inner-spin-button {
 	color: #808285;
 }
 
-/******/
+/*****/
 
 #info-div {
-	height: 600px;
-	background-color: #3E0337;
+	box-sizing: border-box;
+	padding-right: 3%;
+	height: 200px;
+	display: table;
+	background-color: black;
 }
+
+#info-div ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+#contact-us {
+	float: right;
+	bottom: 0;
+    right: 0;
+}
+
+#contact-us ul li {
+	padding-bottom: 1em;
+}
+
+#contact-us ul li a {
+	color: white;
+}
+
+#info-div-label {
+	font-size: 2em;
+	padding-bottom: 0.5em; 
+	color: white;
+}
+
+/*****/
 
 #copyright-div {
 	height: 15px;
