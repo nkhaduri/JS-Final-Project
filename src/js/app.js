@@ -44,3 +44,29 @@ window.onclick = function(event) {
 		}, 100);
   }
 }
+
+// For reading json file, this material was used 
+// https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript
+function loadJSON(file, callback) { 
+	let req = new XMLHttpRequest();
+	req.overrideMimeType("application/json");
+	req.open('GET', file, true);
+	req.onreadystatechange = function () {
+		if (req.readyState == 4 && req.status == "200") {
+		 	callback(req.responseText);
+		}
+	};
+	req.send(null); 
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+	loadJSON('content/hotels.json', function(response) {
+	    let arr = JSON.parse(response)["hotels"];
+	    for(let row = 0; row < 2; row++){
+			for(let col = 0; col < 3; col++) {
+				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
+	   			currentRow.innerHTML += generateTopHotelTemplate(arr[col]);
+			}
+		}
+	});
+});

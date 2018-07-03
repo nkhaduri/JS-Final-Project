@@ -262,10 +262,120 @@ input[type=date]::-webkit-inner-spin-button {
 	height: 80px;
 }
 
+
 #top-hotels-div {
-	height: 1000px;
+	height: 900px;
+	margin-top: 1.5em; 
 	background-color: #ffffff;
+	display: table;
+	table-layout: fixed;
 }
+
+
+/******/
+
+.top-hotels-row {
+	display: table-row;
+	margin-bottom: 1em;
+}
+
+.top-hotel-single-outter{
+	padding-left: 1em;
+	padding-right: 1em;
+	box-sizing: border-box;
+	width: 33.3%;
+	float: left;
+}
+
+.top-hotel-single {
+	display: table-cell;
+	max-height:100%;
+	box-sizing: border-box;
+	border: 1px solid #e6e7e8;
+	padding: 1.25em;
+
+}
+
+.top-hotel-header {
+	position: relative;
+}
+
+.top-hotel-header img{
+	max-width:100%;
+}
+
+.top-hotel-header-price-info {
+	color: white;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 14px 18px 11px;
+	width: 100%;
+	position: absolute;
+    bottom: 0;
+	background-color: black; 
+	opacity: 0.9;
+	text-align: center;
+}
+
+.top-hotel-header-price-info a {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.top-hotel-header-price-info label {
+	color: #b6b6b6;
+	font-size: 12px;
+	position: relative;
+	top: -2px;
+}
+
+.top-hotel-name {
+	padding-bottom: 0.5em;  
+}
+
+.top-hotel-name a {
+	font-size: 1.25em;
+	font-family: "Playfair Display", serif;
+}
+
+.top-hotel-content {
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 10px; 
+}
+
+.top-hotel-content ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+.country-name-label {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	color: #808285;
+
+}
+
+.city-name-label {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	color: #808285;	
+}
+
+.country-name-value {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	color: #808285;
+}
+
+.city-name-value {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	color: #808285;
+}
+
+/******/
 
 #info-div {
 	height: 600px;
