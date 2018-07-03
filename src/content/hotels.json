@@ -1,0 +1,33 @@
+{
+	"hotels":[
+		{
+			"name" : "Likani Health & Spa Centre",
+			"country" : "Georgia",
+			"city" : "Borjomi",
+			"localAddress" : "Meskheti Street 16, 1200",
+			"priceMin": "100",
+			"priceMax": "300", 
+			"imagePath": "imgs/hotels/likani.jpg"
+		},
+
+		{
+			"name" : "Sky Tower Hotel",
+			"country" : "Georgia",
+			"city" : "Batumi",
+			"localAddress" : "7/33 Sherif Khimshiashvili Street",
+			"priceMin": "200",
+			"priceMax": "400",
+			"imagePath": "imgs/hotels/sky-tower.jpg"
+		},
+
+		{
+			"name" : "The Biltmore Hotel Tbilisi",
+			"country" : "Georgia",
+			"city" : "Tbilisi",
+			"localAddress" : "29 Rustaveli Avenue",
+			"priceMin": "400",
+			"priceMax": "800",
+			"imagePath": "imgs/hotels/biltmore.jpg"
+		}
+	]
+}
