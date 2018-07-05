@@ -8,7 +8,7 @@ document.getElementById("login").addEventListener("click", function() {
 
 Array.from(document.getElementsByClassName("close")).forEach(function(el) {
   el.addEventListener("click", function() {
-  	hideForm();
+  	hideModal();
   });
 });
 
@@ -21,10 +21,11 @@ function displayForm(id) {
 	element.style.display = "block";
 }
 
-function hideForm() {
+function hideModal() {
 	setTimeout(function() {	
 		document.getElementById("reg-modal-wrap").style.display = "none";
 		document.getElementById("login-modal-wrap").style.display = "none";
+		document.getElementById("hotel-modal-wrap").style.display = "none";
 	}, 100);
 }
 
@@ -60,12 +61,30 @@ function loadJSON(file, callback) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 	loadJSON('content/hotels.json', function(response) {
-	    let arr = JSON.parse(response)["hotels"];
-	    for(let row = 0; row < 2; row++){
+    let arr = JSON.parse(response)["hotels"];
+    for(let row = 0; row < 2; row++){
 			for(let col = 0; col < 3; col++) {
 				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
 	   			currentRow.innerHTML += generateTopHotelTemplate(arr[col]);
 			}
 		}
 	});
+
+	/*loadJSON('content/hotel_modals.json', function(response) {
+    let arr = JSON.parse(response)["hotelModals"];
+    let element = document.getElementById("all-headers");
+    for(let i = 0; i < arr.length; i++) {
+    	element.innerHTML = generateHotelModalTemplate(arr[i]) + element.innerHTML;
+    }
+	}); */
+
 });
+
+function generateHotelModalNestedTemplates(data, templateGenerator) {
+	let res = ``;
+	for(let i = 0; i < data.length; i++) {
+		res += templateGenerator(data[i]);
+	}
+
+	return res;
+}
