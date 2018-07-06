@@ -1,59 +1,77 @@
 {
 	"hotels":[
 		{
+			"id" : "1",
 			"name" : "Hotel Roosevelt",
 			"country" : "Mexico",
 			"city" : "Mexico",
 			"localAddress" : "Insurgentes Sur 287 Hipodromo Condesa",
+			"phone" : "213-426-123",
 			"priceMin": "120",
 			"priceMax": "160",
+			"description" : "The Hotel Roosevelt is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Mexico. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Derai family and their staff offer an attentive, personalized service and are always available to offer any help to guests.",
 			"imagePath": "imgs/hotels/roosevelt.jpg"
 		},
 		{
+			"id" : "2",
 			"name" : "Likani Health & Spa Centre",
 			"country" : "Georgia",
 			"city" : "Borjomi",
 			"localAddress" : "Meskheti Street 16, 1200",
+			"phone" : "743-426-234",
 			"priceMin": "100",
 			"priceMax": "300", 
+			"description" : "",
 			"imagePath": "imgs/hotels/likani.jpg"
 		},
 
 		{
+			"id" : "3",
 			"name" : "Sky Tower Hotel",
 			"country" : "Georgia",
 			"city" : "Batumi",
 			"localAddress" : "7/33 Sherif Khimshiashvili Street",
+			"phone" : "132-321-745",
 			"priceMin": "200",
 			"priceMax": "400",
+			"description" : "",
 			"imagePath": "imgs/hotels/sky-tower.jpg"
 		},
 
 		{
+			"id" : "4",
 			"name" : "The Biltmore Hotel Tbilisi",
 			"country" : "Georgia",
 			"city" : "Tbilisi",
 			"localAddress" : "29 Rustaveli Avenue",
+			"phone" : "321-426-2316",
 			"priceMin": "400",
 			"priceMax": "800",
+			"description" : "",
 			"imagePath": "imgs/hotels/biltmore.jpg"
 		},
 		{
+			"id" : "5",
 			"name" : "Hotel Bristol Berlin",
 			"country" : "Germany",
 			"city" : "Berlin",
 			"localAddress" : "Kurfürstendamm 27, Charlottenburg-Wilmersdorf",
+			"phone" : "800-426-7866",
 			"priceMin": "1200",
 			"priceMax": "1600",
+			"description" : "",
 			"imagePath": "imgs/hotels/bristol.jpg"
 		},
 		{
+			"id" : "6",
 			"name" : "Grand Majestic Plaza",
 			"country" : "Czech Republic",
 			"city" : "Prague",
 			"localAddress" : "Truhlářská 16",
+			"phone" : "800-980-1679",
 			"priceMin": "500",
 			"priceMax": "900",
+			"description" : "",
 			"imagePath": "imgs/hotels/majestic.jpg"
 		}
 	]

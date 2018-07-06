@@ -139,3 +139,7 @@ function route() {
 		loadTeamMembers();
 	}
 }
+
+document.getElementById("main-search-button").addEventListener("click", function(){
+	window.location.hash = "#search" 
+}); 
