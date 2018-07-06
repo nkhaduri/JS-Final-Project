@@ -60,22 +60,12 @@ function loadJSON(file, callback) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	loadJSON('content/hotels.json', function(response) {
-    let arr = JSON.parse(response)["hotels"];
-    for(let row = 0; row < 2; row++){
-			for(let col = 0; col < 3; col++) {
-				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
-	   			currentRow.innerHTML += generateTopHotelTemplate(arr[col]);
-			}
-		}
-	});
-
 	function initialize() {
-      let inputField = document.getElementById('location');
-      let autocomplete = new google.maps.places.Autocomplete(inputField);
-   	}
+    let inputField = document.getElementById('location');
+    let autocomplete = new google.maps.places.Autocomplete(inputField);
+ 	}
   
-  	google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', initialize);
 
 	/*loadJSON('content/hotel_modals.json', function(response) {
     let arr = JSON.parse(response)["hotelModals"];
@@ -87,6 +77,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 
+function loadTopHotels() {
+	loadJSON('content/hotels.json', function(response) {
+    let arr = JSON.parse(response)["hotels"];
+    for(let row = 0; row < 2; row++){
+			for(let col = 0; col < 3; col++) {
+				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
+	   			currentRow.innerHTML += generateTopHotelTemplate(arr[col]);
+			}
+		}
+	});
+}
+
 function generateHotelModalNestedTemplates(data, templateGenerator) {
 	let res = ``;
 	for(let i = 0; i < data.length; i++) {
@@ -94,4 +96,31 @@ function generateHotelModalNestedTemplates(data, templateGenerator) {
 	}
 
 	return res;
+}
+
+window.addEventListener("hashchange", route);
+
+if(location.hash) {
+	route();
+} else {
+	loadTopHotels();
+}
+
+function loadHTML(anchor, element) {
+	fetch("pages/" + anchor.substr(1) + ".html")
+	.then((res) => {
+		return res.text();
+	}).then((data) => {
+    element.innerHTML = data; 	
+	});
+}
+
+function route() {
+	let element = document.getElementById("top-hotels-div");
+	let anchor = location.hash;
+	/*element.innerHTML = loadHTML(anchor); */
+	loadHTML(anchor, element);
+	if(anchor == "#home") {
+		loadTopHotels();
+	}
 }

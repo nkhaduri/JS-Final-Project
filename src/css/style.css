@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: "Helvetica";
+	font-family: "Times New Roman", Times, serif;
 }
 
 #all-headers {
@@ -78,7 +78,7 @@ body {
 
 #login-modal {
 	width: 32%;
-	height: 265px;
+	height: 275px;
   border: 1px solid rgba(255,255,255,0.501);
   border-radius: 5px;
 	background-color: rgba(255,255,255,0.501);
@@ -194,13 +194,12 @@ body {
 	float: left;
 	margin-top: 20px;
 	margin-left: 0.7%;
-	font-family: "Times New Roman", Times, serif;
 }
 
 #search-div {
 	height: 150px;
 	width: 100%;
-	margin-top: 330px;
+	margin-top: 410px;
 	padding-left: 4em;
 	padding-right: 4em;
 	box-sizing: border-box; 
@@ -258,9 +257,37 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 #navbar-div {
-	height: 80px;
+	height: 40px;
+	text-align: center;
+	border-bottom: 2px solid #1F4851;
+	margin-bottom: 60px;
 }
 
+.navbar-inner-div {
+	height: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 1.1em;
+	background-color: #FFF;
+	border: hidden;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.navbar-inner-div:hover {
+	background-color: #ebeeef;
+}
+
+#contact-inner-div {
+	border: hidden;
+}
+
+a.navbar-link {
+	line-height: 40px;
+	text-decoration: none;
+	color: #1F4851;
+}
 
 #top-hotels-div {
 	height: 900px;
@@ -456,7 +483,6 @@ input[type=date]::-webkit-inner-spin-button {
   border-radius: 5px;
 	background-color: #ebeeef;
 	padding-left: 1.5%;
-	font-family: "Times New Roman", Times, serif;
 	color: #1F4851;
 	overflow-y: scroll;
 }
