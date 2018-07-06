@@ -3,7 +3,7 @@
 		{
 			"name" : "Roosevelt Hotel",
 			"stars" : 5,
-			"address" : "29 Rustaveli Avenue, Tbilisi, Georgia",
+			"address" : "Insurgentes Sur 287 Hipodromo Condesa, Mexico, Mexico",
 			"number" : "+995 523 336 336",
 			"rating" : 4.3,
 			"numReviews" : 433,
@@ -142,6 +142,737 @@
 					"name" : "John Doe",
 					"stars" : 1,
 					"content" : "Total garbage"
+				}
+			]
+		}, 
+
+		{
+			"name" : "Likani Health & Spa Centre",
+			"stars" : 4,
+			"address" : "Meskheti Street 16, 1200, Borjomi, Georgia",
+			"number" : "+995 523 333 555",
+			"rating" : 4.1,
+			"numReviews" : 502,
+			"services" : [
+				{
+					"logoPath" : "imgs/services/parking_logo.png",
+					"name" : "Free Parking",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/breakfast_logo.png",
+					"name" : "Breakfast",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/lunch_logo.png",
+					"name" : "Lunch",
+					"yesNoPath" : "imgs/no.png"
+				},	
+
+				{
+					"logoPath" : "imgs/services/dinner_logo.png",
+					"name" : "Dinner",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/gym_logo.png",
+					"name" : "Gym",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/wifi_logo.png",
+					"name" : "Wi-Fi",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/AC_logo.png",
+					"name" : "A/C",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/TV_logo.png",
+					"name" : "TV",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/spa_logo.png",
+					"name" : "Spa",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/pool_logo.png",
+					"name" : "Pool",
+					"yesNoPath" : "imgs/no.png"
+				}
+			],
+
+			"rooms" : [
+				{
+					"name" : "Standard Single Room",
+					"image1Path" : "imgs/rooms/single1.jpg",
+					"image2Path" : "imgs/rooms/single2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "30 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "30 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "90cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$150"
+				},
+
+				{
+					"name" : "Standard Double Room",
+					"image1Path" : "imgs/rooms/double1.jpg",
+					"image2Path" : "imgs/rooms/double2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "35 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "35 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$200"
+				},
+
+				{
+					"name" : "Luxe",
+					"image1Path" : "imgs/rooms/luxe1.jpg",
+					"image2Path" : "imgs/rooms/luxe2.jpg",
+					"image3Path" : "imgs/rooms/luxe3.jpg",
+					"roomNum" : 2, 
+					"roomAreas" : "40 sq.m, 15 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "15 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$300"
+				}
+			],
+
+			"comments" : [
+				{
+					"name" : "John Doe",
+					"stars" : 3,
+					"content" : "Pretty good, could've been better though"
+				},
+
+				{
+					"name" : "Jane Doe",
+					"stars" : 4,
+					"content" : "Really nice"
+				},
+
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Awesome, pleasently surprised"
+				}
+			]
+		}, 
+
+		{
+			"name" : "Sky Tower Hotel",
+			"stars" : 3,
+			"address" : "7/33 Sherif Khimshiashvili Street, Batumi, Georgia",
+			"number" : "+995 523 777 555",
+			"rating" : 3.7,
+			"numReviews" : 1347,
+			"services" : [
+				{
+					"logoPath" : "imgs/services/parking_logo.png",
+					"name" : "Free Parking",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/breakfast_logo.png",
+					"name" : "Breakfast",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/lunch_logo.png",
+					"name" : "Lunch",
+					"yesNoPath" : "imgs/yes.png"
+				},	
+
+				{
+					"logoPath" : "imgs/services/dinner_logo.png",
+					"name" : "Dinner",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/gym_logo.png",
+					"name" : "Gym",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/wifi_logo.png",
+					"name" : "Wi-Fi",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/AC_logo.png",
+					"name" : "A/C",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/TV_logo.png",
+					"name" : "TV",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/spa_logo.png",
+					"name" : "Spa",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/pool_logo.png",
+					"name" : "Pool",
+					"yesNoPath" : "imgs/no.png"
+				}
+			],
+
+			"rooms" : [
+				{
+					"name" : "Standard Single Room",
+					"image1Path" : "imgs/rooms/single1.jpg",
+					"image2Path" : "imgs/rooms/single2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "30 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "30 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "90cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$150"
+				},
+
+				{
+					"name" : "Standard Double Room",
+					"image1Path" : "imgs/rooms/double1.jpg",
+					"image2Path" : "imgs/rooms/double2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "35 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "35 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$200"
+				},
+
+				{
+					"name" : "Luxe",
+					"image1Path" : "imgs/rooms/luxe1.jpg",
+					"image2Path" : "imgs/rooms/luxe2.jpg",
+					"image3Path" : "imgs/rooms/luxe3.jpg",
+					"roomNum" : 2, 
+					"roomAreas" : "40 sq.m, 15 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "15 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$300"
+				}
+			],
+
+			"comments" : [
+				{
+					"name" : "John Doe",
+					"stars" : 3,
+					"content" : "Pretty good, could've been better though"
+				},
+
+				{
+					"name" : "Jane Doe",
+					"stars" : 4,
+					"content" : "Really nice"
+				},
+
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Awesome, pleasently surprised"
+				}
+			]
+		},
+
+		{
+			"name" : "The Biltmore Hotel Tbilisi",
+			"stars" : 4,
+			"address" : "29 Rustaveli Avenue, Tbilisi, Georgia",
+			"number" : "+995 523 333 000",
+			"rating" : 4.3,
+			"numReviews" : 451,
+			"services" : [
+				{
+					"logoPath" : "imgs/services/parking_logo.png",
+					"name" : "Free Parking",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/breakfast_logo.png",
+					"name" : "Breakfast",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/lunch_logo.png",
+					"name" : "Lunch",
+					"yesNoPath" : "imgs/no.png"
+				},	
+
+				{
+					"logoPath" : "imgs/services/dinner_logo.png",
+					"name" : "Dinner",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/gym_logo.png",
+					"name" : "Gym",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/wifi_logo.png",
+					"name" : "Wi-Fi",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/AC_logo.png",
+					"name" : "A/C",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/TV_logo.png",
+					"name" : "TV",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/spa_logo.png",
+					"name" : "Spa",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/pool_logo.png",
+					"name" : "Pool",
+					"yesNoPath" : "imgs/no.png"
+				}
+			],
+
+			"rooms" : [
+				{
+					"name" : "Standard Single Room",
+					"image1Path" : "imgs/rooms/single1.jpg",
+					"image2Path" : "imgs/rooms/single2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "30 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "30 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "90cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$150"
+				},
+
+				{
+					"name" : "Standard Double Room",
+					"image1Path" : "imgs/rooms/double1.jpg",
+					"image2Path" : "imgs/rooms/double2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "35 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "35 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$200"
+				},
+
+				{
+					"name" : "Luxe",
+					"image1Path" : "imgs/rooms/luxe1.jpg",
+					"image2Path" : "imgs/rooms/luxe2.jpg",
+					"image3Path" : "imgs/rooms/luxe3.jpg",
+					"roomNum" : 2, 
+					"roomAreas" : "40 sq.m, 15 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "15 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$300"
+				}
+			],
+
+			"comments" : [
+				{
+					"name" : "John Doe",
+					"stars" : 3,
+					"content" : "Pretty good, could've been better though"
+				},
+
+				{
+					"name" : "Jane Doe",
+					"stars" : 4,
+					"content" : "Really nice"
+				},
+
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Awesome, pleasently surprised"
+				}
+			]
+		}, 
+
+		{
+			"name" : "Hotel Bristol Berlin",
+			"stars" : 5,
+			"address" : "Kurfürstendamm 27, Charlottenburg-Wilmersdorf, 10719 Berlin, Germany",
+			"number" : "+995 523 300 300",
+			"rating" : 4.8,
+			"numReviews" : 5824,
+			"services" : [
+				{
+					"logoPath" : "imgs/services/parking_logo.png",
+					"name" : "Free Parking",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/breakfast_logo.png",
+					"name" : "Breakfast",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/lunch_logo.png",
+					"name" : "Lunch",
+					"yesNoPath" : "imgs/yes.png"
+				},	
+
+				{
+					"logoPath" : "imgs/services/dinner_logo.png",
+					"name" : "Dinner",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/gym_logo.png",
+					"name" : "Gym",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/wifi_logo.png",
+					"name" : "Wi-Fi",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/AC_logo.png",
+					"name" : "A/C",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/TV_logo.png",
+					"name" : "TV",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/spa_logo.png",
+					"name" : "Spa",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/pool_logo.png",
+					"name" : "Pool",
+					"yesNoPath" : "imgs/yes.png"
+				}
+			],
+
+			"rooms" : [
+				{
+					"name" : "Standard Single Room",
+					"image1Path" : "imgs/rooms/single1.jpg",
+					"image2Path" : "imgs/rooms/single2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "30 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "30 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "90cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$150"
+				},
+
+				{
+					"name" : "Standard Double Room",
+					"image1Path" : "imgs/rooms/double1.jpg",
+					"image2Path" : "imgs/rooms/double2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "35 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "35 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$200"
+				},
+
+				{
+					"name" : "Luxe",
+					"image1Path" : "imgs/rooms/luxe1.jpg",
+					"image2Path" : "imgs/rooms/luxe2.jpg",
+					"image3Path" : "imgs/rooms/luxe3.jpg",
+					"roomNum" : 2, 
+					"roomAreas" : "40 sq.m, 15 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "15 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$300"
+				}
+			],
+
+			"comments" : [
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Excellent"
+				},
+
+				{
+					"name" : "Jane Doe",
+					"stars" : 4,
+					"content" : "Really nice"
+				},
+
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Awesome, pleasently surprised"
+				}
+			]
+		},
+
+
+		{
+			"name" : " Grand Majestic Plaza",
+			"stars" : 4,
+			"address" : "Truhlářská 16, Prague, 110 00, Czech Republic",
+			"number" : "+995 523 100 100",
+			"rating" : 4.5,
+			"numReviews" : 2544,
+			"services" : [
+				{
+					"logoPath" : "imgs/services/parking_logo.png",
+					"name" : "Free Parking",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/breakfast_logo.png",
+					"name" : "Breakfast",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/lunch_logo.png",
+					"name" : "Lunch",
+					"yesNoPath" : "imgs/yes.png"
+				},	
+
+				{
+					"logoPath" : "imgs/services/dinner_logo.png",
+					"name" : "Dinner",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/gym_logo.png",
+					"name" : "Gym",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/wifi_logo.png",
+					"name" : "Wi-Fi",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/AC_logo.png",
+					"name" : "A/C",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/TV_logo.png",
+					"name" : "TV",
+					"yesNoPath" : "imgs/yes.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/spa_logo.png",
+					"name" : "Spa",
+					"yesNoPath" : "imgs/no.png"
+				},
+
+				{
+					"logoPath" : "imgs/services/pool_logo.png",
+					"name" : "Pool",
+					"yesNoPath" : "imgs/yes.png"
+				}
+			],
+
+			"rooms" : [
+				{
+					"name" : "Standard Single Room",
+					"image1Path" : "imgs/rooms/single1.jpg",
+					"image2Path" : "imgs/rooms/single2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "30 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "30 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "90cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$150"
+				},
+
+				{
+					"name" : "Standard Double Room",
+					"image1Path" : "imgs/rooms/double1.jpg",
+					"image2Path" : "imgs/rooms/double2.jpg",
+					"image3Path" : "imgs/rooms/double3.jpg",
+					"roomNum" : 1, 
+					"roomAreas" : "35 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "35 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$200"
+				},
+
+				{
+					"name" : "Luxe",
+					"image1Path" : "imgs/rooms/luxe1.jpg",
+					"image2Path" : "imgs/rooms/luxe2.jpg",
+					"image3Path" : "imgs/rooms/luxe3.jpg",
+					"roomNum" : 2, 
+					"roomAreas" : "40 sq.m, 15 sq.m",
+					"bedroomNum" : 1,
+					"bedroomAreas" : "15 sq.m",
+					"bedNum" : 1,
+					"bedAreas" : "180cm x 200cm",
+					"bathroomNum" : 1,
+					"bathroomAreas" : "5 sq.m",
+					"balconyNum" : 1,
+					"balconyAreas" : "8 sq.m",
+					"price" : "$300"
+				}
+			],
+
+			"comments" : [
+				{
+					"name" : "John Doe",
+					"stars" : 3,
+					"content" : "Pretty good, could've been better though"
+				},
+
+				{
+					"name" : "Jane Doe",
+					"stars" : 4,
+					"content" : "Really nice"
+				},
+
+				{
+					"name" : "John Doe",
+					"stars" : 5,
+					"content" : "Awesome, pleasently surprised"
 				}
 			]
 		}
