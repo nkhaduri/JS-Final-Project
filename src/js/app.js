@@ -79,15 +79,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function loadTopHotels() {
 	loadJSON('content/hotels.json', (response) => {
-    let arr = JSON.parse(response)["hotels"];
-    for(let row = 0; row < 2; row++){
+    	let arr = JSON.parse(response)["hotels"];
+   		for(let row = 0; row < 2; row++){
 			for(let col = 0; col < 3; col++) {
-				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
 	   			currentRow.innerHTML += generateTopHotelTemplate(arr[row*3+col]);
 			}
 		}
 	});
 }
+
+function loadSearchedHotels() {
+	loadJSON('content/hotels.json', (response) => {
+    	let arr = JSON.parse(response)["hotels"];
+    	let divToAdd = document.getElementById("searched-hotels-content");
+   		for(let i = 0; i < arr.length; i++){
+   			console.log(generateSearchedHotelTemplate(arr[i]));
+   			divToAdd.innerHTML += generateSearchedHotelTemplate(arr[i]);
+		}
+	});
+}
+
 
 function loadTeamMembers() {
 	loadJSON('content/team.json', (response) => {
@@ -132,9 +143,9 @@ function route() {
 	loadHTML(anchor, element);
 	if(anchor == "#home") {
 		loadTopHotels();
-	} else if (anchor == "#contact") {
-		
-
+	} else if (anchor == "#search") {
+		console.log("Here");
+		loadSearchedHotels();
 	} else if (anchor == "#about") {
 		loadTeamMembers();
 	}

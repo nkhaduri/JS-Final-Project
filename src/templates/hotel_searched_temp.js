@@ -5,11 +5,11 @@ function generateSearchedHotelTemplate(hotel) {
 				<img src="${hotel.imagePath}">
 			</div>
 			<div class="searched-hotel-info">
-					<h3> Likani </h3> 
+					<h3> ${hotel.name} </h3> 
 					<p> ${hotel.description} </p> 
 					<ul>
 						<li> <a> ${hotel.phone} </a> </li>
-						<li> <a> ${hotel.address} </a> </li> 
+						<li> <a> ${hotel.localAddress} </a> </li> 
 					</ul>
 			</div>
 			<button type="button" class="searched-hotel-more"> See more </button>
