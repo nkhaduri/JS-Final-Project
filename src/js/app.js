@@ -70,6 +70,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}
 	});
 
+	function initialize() {
+      let inputField = document.getElementById('location');
+      let autocomplete = new google.maps.places.Autocomplete(inputField);
+   	}
+  
+  	google.maps.event.addDomListener(window, 'load', initialize);
+
 	/*loadJSON('content/hotel_modals.json', function(response) {
     let arr = JSON.parse(response)["hotelModals"];
     let element = document.getElementById("all-headers");
