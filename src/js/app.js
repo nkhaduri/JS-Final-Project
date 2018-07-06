@@ -1,18 +1,18 @@
-document.getElementById("register").addEventListener("click", function() {
+document.getElementById("register").addEventListener("click", () => {
 	displayForm("reg-modal-wrap")
 });
 
-document.getElementById("login").addEventListener("click", function() {
+document.getElementById("login").addEventListener("click", () => {
 	displayForm("login-modal-wrap")
 });
 
-Array.from(document.getElementsByClassName("close")).forEach(function(el) {
-  el.addEventListener("click", function() {
+Array.from(document.getElementsByClassName("close")).forEach((el) => {
+  el.addEventListener("click", () => {
   	hideModal();
   });
 });
 
-document.getElementById("forgot-pass").addEventListener("click", function() {
+document.getElementById("forgot-pass").addEventListener("click", () => {
 	forgotPass();
 });
 
@@ -22,7 +22,7 @@ function displayForm(id) {
 }
 
 function hideModal() {
-	setTimeout(function() {	
+	setTimeout(() => {	
 		document.getElementById("reg-modal-wrap").style.display = "none";
 		document.getElementById("login-modal-wrap").style.display = "none";
 		document.getElementById("hotel-modal-wrap").style.display = "none";
@@ -31,16 +31,16 @@ function hideModal() {
 
 function forgotPass() {
 	document.getElementById("forgot-pass").style.color = "#7109B0";
-	setTimeout(function() {
+	setTimeout(() => {
 		document.getElementById("password-sent").style.display = "block";
 	}, 1000);
 }
 
-window.onclick = function(event) {
+window.onclick = (event) => {
 	let regModal = document.getElementById("reg-modal-wrap");
 	let logModal = document.getElementById("login-modal-wrap");
 	if (event.target == regModal || event.target == logModal) {
-    setTimeout(function() {
+    setTimeout(() => {
     	event.target.style.display = "none";
 		}, 100);
   }
@@ -48,18 +48,18 @@ window.onclick = function(event) {
 
 function loadJSON(file, callback) {
 	fetch(file)
-	.then(function(response) {
+	.then((response) => {
 		response
 		.json()
-		.then(function(response) {
+		.then((response) => {
 			callback(JSON.stringify(response));
 		});
-    }).catch(function(err) {
+    }).catch((err) => {
     	console.log('Fetch Error :', err);
 	});
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", (event) => {
 	function initialize() {
     let inputField = document.getElementById('location');
     let autocomplete = new google.maps.places.Autocomplete(inputField);
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   google.maps.event.addDomListener(window, 'load', initialize);
 
-	/*loadJSON('content/hotel_modals.json', function(response) {
+	/*loadJSON('content/hotel_modals.json', (response) => {
     let arr = JSON.parse(response)["hotelModals"];
     let element = document.getElementById("all-headers");
     for(let i = 0; i < arr.length; i++) {
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function loadTopHotels() {
-	loadJSON('content/hotels.json', function(response) {
+	loadJSON('content/hotels.json', (response) => {
     let arr = JSON.parse(response)["hotels"];
     for(let row = 0; row < 2; row++){
 			for(let col = 0; col < 3; col++) {
@@ -106,6 +106,7 @@ if(location.hash) {
 	loadTopHotels();
 }
 
+/* from stackoverflow */
 function loadHTML(anchor, element) {
 	fetch("pages/" + anchor.substr(1) + ".html")
 	.then((res) => {
@@ -118,7 +119,6 @@ function loadHTML(anchor, element) {
 function route() {
 	let element = document.getElementById("top-hotels-div");
 	let anchor = location.hash;
-	/*element.innerHTML = loadHTML(anchor); */
 	loadHTML(anchor, element);
 	if(anchor == "#home") {
 		loadTopHotels();

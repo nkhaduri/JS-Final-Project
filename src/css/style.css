@@ -63,6 +63,7 @@ body {
   border: 1px solid rgba(255,255,255,0.501);
   border-radius: 5px;
 	background-color: rgba(255,255,255,0.501);
+	font-family: "Helvetica";
 }
 
 #reg-modal-wrap {
@@ -82,6 +83,7 @@ body {
   border: 1px solid rgba(255,255,255,0.501);
   border-radius: 5px;
 	background-color: rgba(255,255,255,0.501);
+	font-family: "Helvetica";
 }
 
 #login-modal-wrap {
