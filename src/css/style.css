@@ -272,13 +272,12 @@ input[type=date]::-webkit-inner-spin-button {
 	font-size: 1.1em;
 	background-color: #FFF;
 	border: hidden;
-	cursor: pointer;
 	display: inline-block;
 	font-weight: 600;
 }
 
 .navbar-inner-div:hover {
-	background-color: #ebeeef;
+	text-shadow: 2px 1px #2f8dac;
 }
 
 #contact-inner-div {
@@ -286,6 +285,7 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 a.navbar-link {
+	cursor: pointer;
 	line-height: 40px;
 	text-decoration: none;
 	color: #1F4851;
