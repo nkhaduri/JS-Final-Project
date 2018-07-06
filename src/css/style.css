@@ -80,8 +80,8 @@ body {
 #login-modal {
 	width: 32%;
 	height: 275px;
-  border: 1px solid rgba(255,255,255,0.501);
-  border-radius: 5px;
+  	border: 1px solid rgba(255,255,255,0.501);
+  	border-radius: 5px;
 	background-color: rgba(255,255,255,0.501);
 	font-family: "Helvetica";
 }
@@ -99,14 +99,14 @@ body {
 }
 
 .form-input {
-  width: 96%; 
-  border: hidden;
-  border-radius: 6px;
-  height: 29px;
-  font-size: 0.8em;
-  padding-left: 3%;
-  margin-bottom: 2%;
-  background-color: rgba(255,255,255,0.396);
+  	width: 96%; 
+  	border: hidden;
+  	border-radius: 6px;
+  	height: 29px;
+  	font-size: 0.8em;
+  	padding-left: 3%;
+  	margin-bottom: 2%;
+  	background-color: rgba(255,255,255,0.396);
 }
 
 .check {
@@ -137,16 +137,16 @@ body {
 }
 
 .submit-button{
-  height: 35px;
-  border: hidden;
-  border-radius: 6px;
-  color: rgba(255,255,255,0.8);
-  font-size: 0.9em;
-  margin-top: 4%;
-  width: 100px;
-  background-color: rgba(31,72,81,0.666);
-  cursor: pointer;
-  padding: 0;
+ 	height: 35px;
+  	border: hidden;
+  	border-radius: 6px;
+  	color: rgba(255,255,255,0.8);
+  	font-size: 0.9em;
+  	margin-top: 4%;
+  	width: 100px;
+  	background-color: rgba(31,72,81,0.666);
+  	cursor: pointer;
+  	padding: 0;
 }
 
 .submit-button:hover {
@@ -232,16 +232,16 @@ body {
 
 #search-button {
 	background-color: #ffffff;
-  border: hidden;
-  border-radius: 2px;
-  color: #575151;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 0.9em;
+	border: hidden;
+	border-radius: 2px;
+	color: #575151;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 0.9em;
 }
 
 #search-button:hover {
@@ -254,8 +254,8 @@ input[type=date] {
 }
 
 input[type=date]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  display: none;
+ 	-webkit-appearance: none;
+	display: none;
 }
 
 #navbar-div {
@@ -321,7 +321,9 @@ a.navbar-link {
 	box-sizing: border-box;
 	border: 1px solid #e6e7e8;
 	padding: 1.25em;
-
+	background-color: #1F4851;
+	color: white;
+	border-radius: 10px;
 }
 
 .top-hotel-header {
