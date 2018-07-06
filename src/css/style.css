@@ -242,6 +242,7 @@ body {
 	display: inline-block;
 	cursor: pointer;
 	font-size: 0.9em;
+	margin-top: 2px;
 }
 
 #search-button:hover {
@@ -292,18 +293,19 @@ a.navbar-link {
 }
 
 #top-hotels-div {
-	height: 900px;
+	/*height: 900px;*/
 	margin-top: 1.5em; 
 	background-color: #ffffff;
 	display: table;
 	table-layout: fixed;
+	display: inline-block;
 }
 
 
 /******/
 
 .top-hotels-row {
-	display: table-row;
+	display: inline-block;
 	margin-bottom: 1em;
 }
 
