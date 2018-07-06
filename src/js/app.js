@@ -89,6 +89,16 @@ function loadTopHotels() {
 	});
 }
 
+function loadTeamMembers() {
+	loadJSON('content/team.json', (response) => {
+    let arr = JSON.parse(response)["members"];
+		let element = document.getElementById("our-team");
+    for(let i = 0; i < arr.length; i++){
+   		element.innerHTML += generateTeamMemberTemplate(arr[i]);
+		}
+	});
+}
+
 function generateHotelModalNestedTemplates(data, templateGenerator) {
 	let res = ``;
 	for(let i = 0; i < data.length; i++) {
@@ -125,5 +135,7 @@ function route() {
 	} else if (anchor == "#contact") {
 		
 
+	} else if (anchor == "#about") {
+		loadTeamMembers();
 	}
 }

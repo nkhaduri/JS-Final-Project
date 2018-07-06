@@ -1,0 +1,22 @@
+{
+	"members":[
+		{
+			"imgPath" : "imgs/team/member1.jpg",
+			"name" : "Sarah Smith",
+			"position" : "Chief Executive Officer",
+			"about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+		},
+		{
+			"imgPath" : "imgs/team/member2.jpg",
+			"name" : "Helen Davis",
+			"position" : "Chief Operating Officer",
+			"about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+		},
+		{
+			"imgPath" : "imgs/team/member3.jpeg",
+			"name" : "Adam White",
+			"position" : "Founder",
+			"about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+		}
+	]
+}
