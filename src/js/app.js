@@ -83,7 +83,7 @@ function loadTopHotels() {
     for(let row = 0; row < 2; row++){
 			for(let col = 0; col < 3; col++) {
 				let currentRow = document.getElementsByClassName("top-hotels-row")[row];
-	   			currentRow.innerHTML += generateTopHotelTemplate(arr[col]);
+	   			currentRow.innerHTML += generateTopHotelTemplate(arr[row*3+col]);
 			}
 		}
 	});

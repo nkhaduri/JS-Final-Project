@@ -1,6 +1,15 @@
 {
 	"hotels":[
 		{
+			"name" : "Hotel Roosevelt",
+			"country" : "Mexico",
+			"city" : "Mexico",
+			"localAddress" : "Insurgentes Sur 287 Hipodromo Condesa",
+			"priceMin": "120",
+			"priceMax": "160",
+			"imagePath": "imgs/hotels/roosevelt.jpg"
+		},
+		{
 			"name" : "Likani Health & Spa Centre",
 			"country" : "Georgia",
 			"city" : "Borjomi",
@@ -28,6 +37,24 @@
 			"priceMin": "400",
 			"priceMax": "800",
 			"imagePath": "imgs/hotels/biltmore.jpg"
+		},
+		{
+			"name" : "Hotel Bristol Berlin",
+			"country" : "Germany",
+			"city" : "Berlin",
+			"localAddress" : "Kurfürstendamm 27, Charlottenburg-Wilmersdorf",
+			"priceMin": "1200",
+			"priceMax": "1600",
+			"imagePath": "imgs/hotels/bristol.jpg"
+		},
+		{
+			"name" : "Grand Majestic Plaza",
+			"country" : "Czech Republic",
+			"city" : "Prague",
+			"localAddress" : "Truhlářská 16",
+			"priceMin": "500",
+			"priceMax": "900",
+			"imagePath": "imgs/hotels/majestic.jpg"
 		}
 	]
 }
