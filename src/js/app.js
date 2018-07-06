@@ -61,11 +61,11 @@ function loadJSON(file, callback) {
 
 document.addEventListener("DOMContentLoaded", (event) => {
 	function initialize() {
-    let inputField = document.getElementById('location');
-    let autocomplete = new google.maps.places.Autocomplete(inputField);
+    	let inputField = document.getElementById('location');
+    	let autocomplete = new google.maps.places.Autocomplete(inputField);
  	}
   
-  google.maps.event.addDomListener(window, 'load', initialize);
+ 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	/*loadJSON('content/hotel_modals.json', (response) => {
     let arr = JSON.parse(response)["hotelModals"];
@@ -122,5 +122,8 @@ function route() {
 	loadHTML(anchor, element);
 	if(anchor == "#home") {
 		loadTopHotels();
+	} else if (anchor == "#contact") {
+		
+
 	}
 }

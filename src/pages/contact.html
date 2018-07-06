@@ -1,12 +1,43 @@
 <div id="info-div" class="section">
-	<div id="contact-us">
-		<div id="info-div-label"> 
-			<label> Contact Us </label>
+	<div id="info-div-send-message">
+		<h2> CONTACT US </h2>
+		<div id="message-user-name">
+			<label class="message-labels"> YOUR NAME(required) </label>
+			<input type="text" name="username" class="message-input" placeholder="Enter your name" required>
 		</div>
-		<ul>
-			<li> <i> </i> <a>  240 David Aghmashenebeli Alley,. 0159, Tbilisi </a> </li>
-			<li> <i> </i> <a> +0322 20 09 01 </a> </li>
-			<li> <i> </i> <a> info@freeuni.edu.ge </a> </li>
-		</ul>
+		<div id="message-user-mail">
+			<label class="message-labels"> YOUR EMAIL(required) </label>
+			<input type="text" name="email" class="message-input" placeholder="Enter your email" required>
+		</div>
+		<div id="message-subject">
+			<label class="message-labels"> SUBJECT </label>
+			<input type="text" name="subject" class="message-input" placeholder="Enter subject" required>
+		</div>
+		<div id="message-user-text">
+			<label class="message-labels"> YOUR MESSAGE </label>
+			<textarea class="message-input"> </textarea>
+		</div>
+		<button> Send </button>
+
+	</div>
+	<div id="info-div-about-us">
+		<div id="about-us-email">
+			<label class="about-us-labels"> Email </label>
+			<a class="about-us-texts"> info@freeuni.edu.ge  </a>
+		</div>
+
+		<div id="about-us-phone">
+			<label class="about-us-labels"> Phone </label>
+			<a class="about-us-texts"> +0322 20 09 01 </a>
+		</div>
+
+		<div id="about-us-address">
+			<label class="about-us-labels"> Address </label>
+			<a class="about-us-texts"> 240 David Aghmashenebeli Alley,. 0159, Tbilisi </a>
+		</div>
+	</div>
+	<div id="info-div-map"> 
+		<h4> Find us on map </h4>
+		<img src="imgs/freeuni-map.png">
 	</div>
 </div>

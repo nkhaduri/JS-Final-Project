@@ -403,6 +403,78 @@ a.navbar-link {
 	color: #808285;
 }
 
+/******/
+#info-div-send-message{
+	color: #1F4851;
+	padding: 1em;
+	box-sizing: border-box;
+	display: block;
+	width: 50%;
+	margin-left: 10%;
+	float: left;
+}
+
+.message-labels {
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 2px; 
+	margin-bottom: 8px;
+}
+
+.message-input {
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 2px; 
+	margin-bottom: 4px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#info-div-map {
+	width: 50%;
+	margin-left: 25%;
+	padding: 1em;
+	box-sizing: border-box;
+	text-align: center;
+	clear: both;
+	float: left;
+}
+
+#info-div-map h4 {
+	color: #1F4851;
+	margin-top: 0;
+}
+
+#info-div-map img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#message-user-name {
+
+}
+
+#info-div-about-us {
+	color: #1F4851;
+	float: left;
+	width: 30%;
+	padding: 2.5em;
+}
+
+.about-us-labels {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 0.25em;
+}
+
+.about-us-texts {
+	display: block;
+	padding-bottom: 0.25em;
+}
+
+
+/******/
+
 /*****/
 
 #info-div {
@@ -410,7 +482,6 @@ a.navbar-link {
 	padding-right: 3%;
 	height: 200px;
 	display: table;
-	background-color: black;
 }
 
 #info-div ul {
@@ -481,8 +552,8 @@ a.navbar-link {
 .hotel-modal {
 	width: 60%;
 	height: 560px;
-  border: 1px solid #ebeeef;
-  border-radius: 5px;
+ 	border: 1px solid #ebeeef;
+  	border-radius: 5px;
 	background-color: #ebeeef;
 	padding-left: 1.5%;
 	color: #1F4851;
