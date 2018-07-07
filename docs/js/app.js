@@ -178,5 +178,6 @@ function route() {
 }
 
 document.getElementById("main-search-button").addEventListener("click", () => {
+	
 	window.location.hash = "#search";
 }); 
