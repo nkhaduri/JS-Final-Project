@@ -158,7 +158,7 @@ function route() {
 		    let arr = JSON.parse(response)["hotelModals"];
 		    let element = document.getElementById("all-headers");
 		   	element.innerHTML = generateHotelModalTemplate(arr[anchor.substr(anchor.lastIndexOf("#") + 1)-1]) + element.innerHTML;
-		   	document.getElementById("modal-exit-button").addEventListener("click", function(){
+		   	document.getElementById("modal-exit-button").addEventListener("click", () => {
 		   		let elem = document.getElementById("single-hotel-modal");
 				elem.parentNode.removeChild(elem);
 				window.location.hash = anchor.substr(0, anchor.lastIndexOf("#")); 
@@ -177,6 +177,6 @@ function route() {
 	}
 }
 
-document.getElementById("main-search-button").addEventListener("click", function(){
-	window.location.hash = "#search" 
+document.getElementById("main-search-button").addEventListener("click", () => {
+	window.location.hash = "#search";
 }); 
