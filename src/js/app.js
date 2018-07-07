@@ -135,7 +135,6 @@ if(location.hash) {
 
 /* from stackoverflow */
 function loadHTML(anchor, element) {
-	console.log("pages/" + anchor.substr(1) + ".html");
 	fetch("pages/" + anchor.substr(1) + ".html")
 	.then((res) => {
 		return res.text();
@@ -151,7 +150,6 @@ function isNormalInteger(str) {
 }
 
 function route() {
-	console.log(window.location.hash);
 	let element = document.getElementById("top-hotels-div");
 	let anchor = location.hash;
 	if(isNormalInteger(anchor.substr(anchor.lastIndexOf("#") + 1))) {
@@ -160,8 +158,8 @@ function route() {
 		    let element = document.getElementById("all-headers");
 		   	element.innerHTML = generateHotelModalTemplate(arr[anchor.substr(anchor.lastIndexOf("#") + 1)-1]) + element.innerHTML;
 		   	document.getElementById("modal-exit-button").addEventListener("click", function(){
-		   		let elem = document.getElementById("all-headers");
-				elem.innerHTML = "";
+		   		let elem = document.getElementById("single-hotel-modal");
+				elem.parentNode.removeChild(elem);
 				window.location.hash = anchor.substr(0, anchor.lastIndexOf("#")); 
 			}); 
 

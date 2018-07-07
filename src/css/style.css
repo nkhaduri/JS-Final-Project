@@ -250,7 +250,7 @@ body {
 }
 
 input[type=date] {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: grey;
 }
 
@@ -368,7 +368,29 @@ a.navbar-link {
 .top-hotel-name a {
 	font-size: 1.25em;
 	font-family: "Playfair Display", serif;
+	color: white;
 }
+
+.top-hotel-name a {
+    color: white;
+}
+
+.top-hotel-name a:visited {
+    color: white;
+}
+
+.top-hotel-name a:hover {
+    color: white;
+}
+
+.top-hotel-name a:focus {
+    color: white;
+}
+
+.top-hotel-name a:active {
+	color: white;
+}
+
 
 .top-hotel-content {
 	box-sizing: border-box;

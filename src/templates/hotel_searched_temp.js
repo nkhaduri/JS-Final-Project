@@ -8,8 +8,8 @@ function generateSearchedHotelTemplate(hotel) {
 					<h3> ${hotel.name} </h3> 
 					<p> ${hotel.description} </p> 
 					<ul>
-						<li> <a> ${hotel.phone} </a> </li>
-						<li> <a> ${hotel.localAddress} </a> </li> 
+						<li> <label> Phone: </label> <a> ${hotel.phone} </a> </li>
+						<li> <label> Address: </label>  <a> ${hotel.localAddress} </a> </li> 
 					</ul>
 			</div>
 			<button type="button" class="searched-hotel-more"> See more </button>
