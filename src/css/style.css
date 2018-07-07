@@ -551,10 +551,11 @@ a.navbar-link {
 .searched-hotel-more {
 	position:absolute;
 	float: right;
-    bottom:0;
-    right:0;
-    margin-right: 1em;
+  bottom:0;
+  right:0;
+  margin-right: 1em;
 	margin-bottom: 1em;
+	cursor: pointer;	
 }
 
 /******/
@@ -1093,4 +1094,11 @@ a.navbar-link {
 	font-size: 1.3em;
 	font-weight: 600;
 	color: #1F4851;
+}
+
+#modal-exit-button {
+	border: hidden;
+	background-color: #ebeeef;
+	font-size: 1em;
+	cursor: pointer;
 }

@@ -17,15 +17,17 @@ document.getElementById("forgot-pass").addEventListener("click", () => {
 });
 
 function displayForm(id) {
+	console.log(id);
 	let element = document.getElementById(id); 
 	element.style.display = "block";
 }
 
 function hideModal() {
-	setTimeout(() => {	
-		document.getElementById("reg-modal-wrap").style.display = "none";
-		document.getElementById("login-modal-wrap").style.display = "none";
-		document.getElementById("hotel-modal-wrap").style.display = "none";
+	setTimeout(() => {
+		if(document.getElementById("reg-modal-wrap"))	
+			document.getElementById("reg-modal-wrap").style.display = "none";
+		if(document.getElementById("login-modal-wrap"))
+			document.getElementById("login-modal-wrap").style.display = "none";
 	}, 100);
 }
 
