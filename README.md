@@ -1,3 +1,9 @@
 # JS-Final-Project
 
-This is readme file for the best final project ever.
+git clone https://github.com/nkhaduri/JS-Final-Project.git
+
+npm install
+
+cd JS-Final-Project/docs
+
+index.html
