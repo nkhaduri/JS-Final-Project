@@ -17,7 +17,6 @@ document.getElementById("forgot-pass").addEventListener("click", () => {
 });
 
 function displayForm(id) {
-	console.log(id);
 	let element = document.getElementById(id); 
 	element.style.display = "block";
 }
@@ -48,8 +47,8 @@ window.onclick = (event) => {
   }
 }
 
-function loadJSON(file, callback) {
-	fetch(file)
+async function loadJSON(file, callback) {
+	await fetch(file)
 	.then((response) => {
 		response
 		.json()
