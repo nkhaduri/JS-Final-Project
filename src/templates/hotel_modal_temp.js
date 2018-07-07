@@ -1,8 +1,8 @@
 function generateHotelModalTemplate(hotel) {
 	return `
-		<div class="modal hotel-modal-wrap">
+		<div class="modal hotel-modal-wrap" id="single-hotel-modal">
 			<div class="hotel-modal"> 
-				<div class="close"> &times; </div>
+				<div class="close"> <button id="modal-exit-button"> x </button> </div> 
 				<div class="hotel-name-div"> ${hotel.name} </div>
 				<div class="hotel-stars-div"> 
 					<img src="imgs/star.png" class="star-logo">

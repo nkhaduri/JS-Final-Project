@@ -96,6 +96,12 @@ function loadSearchedHotels() {
    		for(let i = 0; i < arr.length; i++){
    			divToAdd.innerHTML += generateSearchedHotelTemplate(arr[i]);
 		}
+		for(let i = 0; i < arr.length; i++){
+			let currentElem = document.getElementsByClassName("searched-hotel-more")[i];
+			currentElem.addEventListener("click", function(){
+				window.location.hash += "#" + (i+1); 
+			}); 
+		}
 	});
 }
 
@@ -129,25 +135,46 @@ if(location.hash) {
 
 /* from stackoverflow */
 function loadHTML(anchor, element) {
+	console.log("pages/" + anchor.substr(1) + ".html");
 	fetch("pages/" + anchor.substr(1) + ".html")
 	.then((res) => {
 		return res.text();
 	}).then((data) => {
-    element.innerHTML = data; 	
+   		element.innerHTML = data; 	
 	});
 }
 
+/* from stackoverflow */
+function isNormalInteger(str) {
+    var n = Math.floor(Number(str));
+    return n !== Infinity && String(n) === str && n >= 0;
+}
+
 function route() {
+	console.log(window.location.hash);
 	let element = document.getElementById("top-hotels-div");
 	let anchor = location.hash;
-	loadHTML(anchor, element);
-	if(anchor == "#home") {
-		loadTopHotels();
-	} else if (anchor == "#search") {
-		console.log("Here");
-		loadSearchedHotels();
-	} else if (anchor == "#about") {
-		loadTeamMembers();
+	if(isNormalInteger(anchor.substr(anchor.lastIndexOf("#") + 1))) {
+		loadJSON('content/hotel_modals.json', (response) => {
+		    let arr = JSON.parse(response)["hotelModals"];
+		    let element = document.getElementById("all-headers");
+		   	element.innerHTML = generateHotelModalTemplate(arr[anchor.substr(anchor.lastIndexOf("#") + 1)-1]) + element.innerHTML;
+		   	document.getElementById("modal-exit-button").addEventListener("click", function(){
+		   		let elem = document.getElementById("all-headers");
+				elem.innerHTML = "";
+				window.location.hash = anchor.substr(0, anchor.lastIndexOf("#")); 
+			}); 
+
+		});
+	} else {
+		loadHTML(anchor, element);
+		if(anchor == "#home") {
+			loadTopHotels();
+		} else if (anchor == "#search") {
+			loadSearchedHotels();
+		} else if (anchor == "#about") {
+			loadTeamMembers();
+		}
 	}
 }
 

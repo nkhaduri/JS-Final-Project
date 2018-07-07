@@ -10,7 +10,7 @@ function generateTopHotelTemplate(hotel) {
 				</div>
 				<div class="top-hotel-content">
 					<ul>
-						<li class="top-hotel-name"> <a> ${hotel.name} </a> </li>
+						<li class="top-hotel-name"> <a href="#home#${hotel.id}"> ${hotel.name} </a> </li>
 						<li> <label class="country-name-label"> Country: </label> <a class="country-name-value"> ${hotel.country} </a> </li>
 						<li> <label class="city-name-label"> City: </label> <a class="city-name-value"> ${hotel.city} </a> </li>
 					</ul>
