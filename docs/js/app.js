@@ -1,21 +1,3 @@
-document.getElementById("register").addEventListener("click", () => {
-	displayForm("reg-modal-wrap")
-});
-
-document.getElementById("login").addEventListener("click", () => {
-	displayForm("login-modal-wrap")
-});
-
-Array.from(document.getElementsByClassName("close")).forEach((el) => {
-  el.addEventListener("click", () => {
-  	hideModal();
-  });
-});
-
-document.getElementById("forgot-pass").addEventListener("click", () => {
-	forgotPass();
-});
-
 function displayForm(id) {
 	let element = document.getElementById(id); 
 	element.style.display = "block";
@@ -68,13 +50,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
  	google.maps.event.addDomListener(window, 'load', initialize);
 
-	/*loadJSON('content/hotel_modals.json', (response) => {
-    let arr = JSON.parse(response)["hotelModals"];
-    let element = document.getElementById("all-headers");
-    for(let i = 0; i < arr.length; i++) {
-    	element.innerHTML = generateHotelModalTemplate(arr[i]) + element.innerHTML;
-    }
-	}); */
+	document.getElementById("register").addEventListener("click", () => {
+		displayForm("reg-modal-wrap")
+	});
+
+	document.getElementById("login").addEventListener("click", () => {
+		displayForm("login-modal-wrap")
+	});
+
+	Array.from(document.getElementsByClassName("close")).forEach((el) => {
+	  el.addEventListener("click", () => {
+	  	hideModal();
+	  });
+	});
+
+	document.getElementById("forgot-pass").addEventListener("click", () => {
+		forgotPass();
+	});
+	
+	document.getElementById("main-search-button").addEventListener("click", () => {
+		
+		window.location.hash = "#search";
+	}); 
 
 });
 
@@ -99,7 +96,7 @@ function loadSearchedHotels() {
 		}
 		for(let i = 0; i < arr.length; i++){
 			let currentElem = document.getElementsByClassName("searched-hotel-more")[i];
-			currentElem.addEventListener("click", function(){
+			currentElem.addEventListener("click", () => {
 				window.location.hash += "#" + (i+1); 
 			}); 
 		}
@@ -177,7 +174,3 @@ function route() {
 	}
 }
 
-document.getElementById("main-search-button").addEventListener("click", () => {
-	
-	window.location.hash = "#search";
-}); 
