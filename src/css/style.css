@@ -613,6 +613,10 @@ a.navbar-link {
 	margin-bottom: 1em; 
 }
 
+#advanced-search-button {
+	cursor: pointer;
+}
+
 .advanced-search-options input {
 	box-sizing : border-box;
 	width: 100%;

@@ -136,8 +136,8 @@ if(location.hash) {
 }
 
 /* from stackoverflow */
-function loadHTML(anchor, element) {
-	fetch("pages/" + anchor.substr(1) + ".html")
+async function loadHTML(anchor, element) {
+	await fetch("pages/" + anchor.substr(1) + ".html")
 	.then((res) => {
 		return res.text();
 	}).then((data) => {
